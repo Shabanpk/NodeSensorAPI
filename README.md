@@ -3,18 +3,17 @@ Building a RESTful API in Node, Express & Postgres
 
 Requirements
 •	Node and npm
-
 Installation
-•	Clone the repo: git clone 
+•	Clone the git repo: https://github.com/Shabanpk/NodeSensorAPI.git 
 •	Install dependencies: npm install
 •	Create the database in Postgres
-•	Execute the notepad file content “CreateSensorTable.txt” in postgress editor to create table “sensorinfo”
-•	Run the command in terminal “node CsvToInsertDataInDb.js” that can read all csv file and insert record in database or second option import Senors_TEMP_099 CSV file in postgress database 
-•	Set credientation of your database name, password in “db.js” file
+•	Execute the notepad file content “CreateSensorTable.txt” in PostgreSQL editor to create table “sensorinfo”
+•	Run the command in terminal “node CsvToInsertDataInDb.js” that can read all CSV file and insert record in database or second option import Senors_TEMP_099 CSV file in Postgres database 
+•	Set credential of your database name, password in “db.js” file
 •	Run command in node terminal to test API “Node app.js”
 Testing the API Using Postman 
 Login API -Module 
-When you run the application with command “Node app.js” then automatically user table create in database with the username “Shaban” and password “admin”. In addition, I have also used the “bcrypt” and “jsonwebtoken” library to encrypt the password in token.
+When you run the application with command “Node app.js” then automatically user table create in the database with the username “Shaban” and password “admin”. In addition, I have also used the “bcrypt” and “jsonwebtoken” library to encrypt the password in a token.
 
 1.	Send the post request the given url is mentioned below:
 http://localhost:3001/user/auth
@@ -30,7 +29,7 @@ Expected Output
     }
 }
 
-2.	Then you can get token and get request the against token pass in authorization section
+2.	Then you can get token and get request the against the token pass in the authorization section
 http://localhost:3001/user/all
 Expected Output
 {
@@ -44,10 +43,10 @@ Expected Output
         }
     ]
 }
-if token is wrong then error message “Failed to authorize request”
+if the token is wrong then the error message “Failed to authorize request”
 
 Sensor API – CRUD 
-I have created the CRUD API of sensor information which is mentioned below all four API end point.
+I have created the CRUD API of sensor information which is mentioned below all four API endpoints.
 Endpoint
 
 Get all Sensor data from database:
