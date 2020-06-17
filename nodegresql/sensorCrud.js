@@ -4,7 +4,7 @@ const router = express.Router();
 var config = {
   user: 'postgres', 
   host: 'localhost',
-  database: 'nodegre',
+  database: 'NodeAPI',
   password: 'admin',
   port: 5432
   //max: 10, // max number of clients in the pool
@@ -18,7 +18,12 @@ router.get('/getAllSensors',(request, response)=>{
       if (error) {
         throw error
       }
+      //Json.stringify(results.rows);
+      //response.json(result.rows);
+      
       return response.status(200).json(results.rows)
+      
+      
       //return response.send(results.rows);
     })
 

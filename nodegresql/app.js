@@ -16,21 +16,7 @@ app.use('/user', user)
 app.get('*', (req, res) => {
     res.send('<h1 style="margin:0 auto;">Welcome</h1>');
 });
-// function gettoken(){
-//     const token = jwt.sign(
-//         {name: this.name}
-//         )
-//         return token;
-// }
-// app.post('/login',(req,res)=>{
-//     const User={
-//         name:req.body.name,
-//         password:req.body.password
-//     }
-//     res.send(User)
-//     res.header("x-auth-token",token).send(user);
- 
-// })
+
 sequelize.sync({
     alter: true
 }).then(result => {

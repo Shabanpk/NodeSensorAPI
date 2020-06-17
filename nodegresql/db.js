@@ -4,8 +4,6 @@ const Sequelize = require('sequelize');
 //DATABASE_URL = process.env.DATABASE_URL;
 DATABASE_URL = 'postgres://postgres:admin@localhost:5432/NodeAPI';
 const sequelize = new Sequelize(DATABASE_URL);
-
-
 module.exports = sequelize;
 
 //set DATABASE_URL=postgres://postgres:admin@localhost:5432/NodeAPI
