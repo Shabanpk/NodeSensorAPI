@@ -64,6 +64,10 @@ PUT Request: http://localhost:3001/sensor/updateSensor/1
 Delete Sensor data by specific ID:
 Delete Request: http://localhost:3000/sensor/deleteSensor/5
 
+Testing the endpoint with supertest
+•	I have created the endpoint in “JEST_API_TESTING.js” which can get only one row fetch from database and call this endpoint in test folder inside index.js.
+•	Just run the command in the terminal: npm test 
+
 
 
 
